@@ -1,11 +1,9 @@
 # Wiki
 
-------
 Design a Wikipedia-like online encyclopedia.
 
 ## Background
 
-------
 Wikipedia is a free online encyclopedia that consists of a number of encyclopedia entries on various topics.
 
 Each encyclopedia entry can be viewed by visiting that entry’s page. Visiting [https://en.wikipedia.org/wiki/HTML](https://en.wikipedia.org/wiki/HTML), for example, shows the Wikipedia entry for HTML. Notice that the name of the requested page (HTML) is specified in the route `/wiki/HTML`. Recognize too, that the page’s content must just be HTML that your browser renders.
@@ -18,13 +16,10 @@ By having one Markdown file represent each encyclopedia entry, we can make our e
 
 ## Getting Started
 
-------
-
 - Download the distribution code from <https://cdn.cs50.net/web/2020/spring/projects/1/wiki.zip> and unzip it.
 
 ## Understanding
 
-------
 In the distribution code is a Django project called `wiki` that contains a single app called `encyclopedia`.
 
 First, open up `encyclopedia/urls.py`, where the URL configuration for this app is defined. Notice that we’ve started you with a single default route that is associated with the `views.index` function.
@@ -39,7 +34,6 @@ You can find the template by looking at `encyclopedia/templates/encyclopedia/ind
 
 ## Specification
 
-------
 Complete the implementation of your Wiki encyclopedia. You must fulfill the following requirements:
 
 - **Entry Page:** Visiting `/wiki/TITLE`, where TITLE is the title of an encyclopedia entry, should render a page that displays the contents of that encyclopedia entry.
